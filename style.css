@@ -303,6 +303,29 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+.notification {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+}
+
+.scroll-container {
+  /* display: inline-block; */
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .header .btn { display: none; }
 
 .header {

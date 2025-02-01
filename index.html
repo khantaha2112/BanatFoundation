@@ -22,7 +22,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./style.css">
-
+  <!-- Tailwind CSS -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <!-- 
     - google font link
   -->
@@ -185,11 +186,10 @@
         </div>
       </section>
 
-      <section
-        style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 40px; padding: 20px; ">
-        <div style="font-size: large; font-weight: 800; color: red;">Important Announcement</div>
-        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-          <div>
+      <section class="p-10">
+        <div class="text-red-500 font-bold text-2xl text-center">Important Announcement</div>
+        <div class="flex flex-col gap-10 justify-center items-center">
+          <div class="width-full">
             <img src="WhatsApp Image 2025-01-26 at 16.01.39 (1).jpeg" alt="Notice" width="500">
           </div>
           <div>
@@ -198,9 +198,9 @@
         </div>
       </section>
 
-      <section style=" text-align: center;">
-        <h2>SPEECH</h2>
-        <video controls style=" width: 40%; max-width: 800px; height: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); object-fit: cover; /* Ensures the video scales properly within the height */ ">
+      <section style=" text-align: center;" class="flex flex-col justify-center items-center">
+        <h2 class="text-red-500 font-bold text-2xl text-center">SPEECH</h2>
+        <video controls class="p-10">
           <source src="WhatsApp Video 2025-01-26 at 13.19.23.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -601,9 +601,9 @@
       -->
       <!-- <section class="video has-bg-image" aria-label="video"
         style="background-image: url('/eduweb-master/images/video-bg.png')"> -->
-      <div class="container">
+      <div class="container flex justify-center items-center">
         <div class="video-card">
-          <div class="video-banner img-holder" style=" width: 70%; height: 600px;">
+          <div class="video-banner img-holder flex items-center justify-center" style=" width: 100%;">
             <video src="./banatgif.mp4" width="970" height="550" class="img-cover" autoplay muted loop playsinline>
               Your browser does not support the video tag.
             </video>
